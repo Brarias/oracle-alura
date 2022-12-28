@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<h1>TABLA DE MULTIPLICAR</h1>
+
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function imprimir(mensaje) {
+    document.write(mensaje);
+    saltarLinea();
+  }
+
+  var multiplo = parseInt(prompt("Ingrese el numero de tabla: "));
+  var multiplicador = 1;
+  var resultado;
+
+  while (multiplicador <= 10) {
+    resultado = multiplo * multiplicador;
+    imprimir(`${multiplo} x ${multiplicador} = ${resultado}`);
+    multiplicador++;
+  }
+
+
+
+</script>

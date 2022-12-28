@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+
+<h1>JUEGO DE ADIVINANZA</h1>
+
+<script>
+
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+  function imprimir(mensaje) {
+    document.write(mensaje);
+    saltarLinea();
+  }
+
+  let numeroPensado = Math.floor(Math.random() * 10);
+  let intentos = 3;
+  let contador = 0;
+
+  while (intentos > 0) {
+    var numeroLanzado = parseInt(prompt("Ingrese un numero entre 0-10: "));
+    contador++;
+    if (numeroLanzado < numeroPensado) {
+      alert("Te falta!!!");
+    }
+    if (numeroPensado == numeroLanzado) {
+      alert("GENIAL!!! Acertaste en el intento: " + contador);
+      break;
+    }
+    else {
+      alert("Te pasaste")
+    }
+
+    intentos--;
+
+  }
+
+
+  imprimir("FIN");
+
+
+
+</script>

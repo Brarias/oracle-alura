@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+
+  var inicioDeSesionRegistrado = "alura";
+  var contrasenhaRegistrada = "alura321";
+
+  var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+  var contrasenhaIngresada = prompt("Ingrese su contraseña");
+  var intentos = 2;
+
+
+  if (!(inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada)) {
+    do {
+      alert("Datos incorrectos. Reingrese los datos");
+      var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+      var contrasenhaIngresada = prompt("Ingrese su contraseña");
+      intentos--;
+    } while (intentos > 0)
+  }
+  alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+
+
+</script>

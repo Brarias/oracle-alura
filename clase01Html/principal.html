@@ -1,0 +1,44 @@
+<meta charset="utf-8" />
+
+
+<h1>PROGRAMA</h1>
+<br>
+
+
+<script>
+  let anio = 2022;
+  let promedio;
+  let edadJimena = 19;
+  let edadPaola = 27;
+  let edadLaura = 12;
+  const LAURA = "Laura";
+
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function imprimir(mensaje) {
+    document.write(mensaje);
+    saltarLinea();
+  }
+
+  function diferenciaEdades(edadMia, edadHermano) {
+    let resultado = edadMia - edadHermano;
+    saltarLinea();
+    imprimir("Nuestra diferencia de edad es: " + resultado);
+  }
+
+  imprimir("Juan tiene: " + (anio - 2000) + " años");
+  imprimir("Pedro tiene: " + (anio - 1995) + " años");
+  imprimir("Carlos tiene: " + (anio - 2005) + " años");
+  imprimir("Jimena tiene: " + (anio - 2003) + " años");
+  imprimir("Paola tiene: " + (anio - 1995) + " años");
+  imprimir(`${LAURA} tiene: ` + (anio - 2010) + " años");
+  promedio = (edadJimena + edadPaola + edadLaura) / 3;
+  imprimir("El promedio de las edades de las mujeres es: " + Math.round(promedio));
+  imprimir("Hola amigos");
+  diferenciaEdades(35, 18);
+
+</script>

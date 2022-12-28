@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA - CALCULAR NUMEROS PARES</h1>
+
+
+
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function imprimir(mensaje) {
+    document.write(mensaje);
+    saltarLinea();
+  }
+
+  let numeroPar = 0;
+
+  while (numeroPar <= 100) {
+    if (numeroPar % 2 == 0) {
+      imprimir("Numero par: " + numeroPar);
+    }
+    numeroPar++;
+  }
+
+  imprimir("FIN");
+
+</script>
