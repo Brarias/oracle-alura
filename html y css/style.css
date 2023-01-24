@@ -99,11 +99,6 @@ footer{
   margin: 20px;
 }
 
-main{
-  width: 940px;
-  margin: 0 auto;
-}
-
 form{
   margin: 40px 0;
 }
@@ -164,6 +159,13 @@ th, td{
   width: 100%;
 }
 
+.principal{
+  padding: 3em 0;
+  background: #FEFEFE;
+  width: 940px;
+  margin: 0 auto;
+}
+
 .titulo-principal{
   text-align: center;
   font-size: 2em;
@@ -191,11 +193,23 @@ th, td{
 
 .mapa{
   padding: 3em 0;
+  /* background: linear-gradient(45deg,orange, blue); */
+  background: linear-gradient(#FEFEFE, #888888);
 }
 
 .mapa p{
   margin: 0 0 2em;
   text-align: center;
+}
+
+.mapa-contenido{
+  width: 940px;
+  margin: 0 auto;
+}
+
+.diferenciales{
+  padding: 3em 0;
+  background: #888888;
 }
 
 .contenido-diferenciales{
@@ -211,6 +225,10 @@ th, td{
 
 .items{
   line-height: 1.5;
+}
+
+.items:first-child{
+  font-weight: bold;
 }
 
 .imagen-diferenciales{
