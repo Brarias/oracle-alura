@@ -237,6 +237,12 @@ th, td{
 
 .imagen-diferenciales{
   width: 60%;
+  transition: 400ms;
+  box-shadow: 10px 10px 30px 15px black; /*derecha abajo difuminacion color tam de la sombra*/
+}
+
+.imagen-diferenciales:hover{
+  opacity: 0.3;
 }
 
 .video{
